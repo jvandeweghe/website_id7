@@ -1,0 +1,248 @@
+/*--- reset ------------*/
+/* Resetting of element defaults to avoid cross-browser incompatibilities */
+html,body, , span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,font,img,ins,kbd,q,s,samp,sub,sup,tt,var,dd,dl,dt,li,ol,ul,form,fieldset,input,textarea,label,table,legend,caption,tbody,tfoot,thead,tr,th,td
+	{
+	margin: 0;
+	padding: 0;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	text-align: left;
+}
+
+img,a img,:link img,:visited img {
+	border: 0;
+}
+
+object {
+	outline: none; /* fix for FF3 */
+}
+/*--- page layout framework ------------*/
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/* This removes the border around the viewport in old versions of IE */
+	/*	width:100%;*/
+	background: #fff;
+	min-width: 600px;
+	/* Minimum width of layout - remove line if not required */
+	/* The min-width property does not work in old versions of Internet Explorer */
+	font-size: 76%;
+	text-align: center;
+	font-family: "Copperplate", sans-serif;
+	color: white;
+	background-color: black;
+}
+/* image styles */ 
+.centeredImage
+    {
+/*     text-align:center; */
+    margin-top:0px;
+    margin-bottom:0px;
+    padding:0px;
+    }
+
+/*--- headings ------------*/
+
+h2, h3, h4, h5 {
+	/*font-family: "Calibri", "Arial", "Helvetica", "Nimbus Sans L", sans-serif;*/
+	font-family: "Copperplate",sans-serif;
+	line-height: 1em;
+	font-weight: normal;
+}
+
+h2 {
+	margin: 0.1em 0 0.6em 0;
+	font-size: 2.1em;
+	color: #fff;
+}
+
+h3 {
+	margin: 0.2em 0 0.5em 0;
+	font-size: 1.4em;
+	color: #fff;
+}
+
+h4 {
+	margin: 0 0 0.2em 0;
+	font-size: 1.4em;
+	color: #a1ff66; /*b0e194*/
+}
+
+h5 {
+	margin: 0;
+	font-size: 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+span {
+	font-weight: bold;
+	color: rgb(252, 0, 0);
+}
+
+/*--- links ------------*/
+a {
+	font-size: inherit;
+}
+
+a:link,a span.hilite {
+	text-decoration: none;
+	color: #c5e2b5;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #95be7d;
+}
+
+a:hover,a span.hilite:hover {
+	text-decoration: underline;
+	color: #a1ff66;
+}
+
+a:active,a span.hilite:active {
+	text-decoration: none !important;
+	color: #fff;
+}
+/* Page layout */
+#fixed {
+	margin: 0 auto;
+	width: 940px; /* you can use px, em or % */
+	text-align: left;
+}
+
+#header {
+	clear: both;
+	float: left;
+	width: 100%;
+	min-height: 100px;
+	/* 	width: 960px; */
+	height: 169px;
+	background-image: url("images/header_website_01.jpg");
+	background-repeat: no-repeat;
+}
+
+#menu {
+	clear: both;
+	float: left;
+	width: 100%;
+	min-height: 100px;
+}
+
+#container2 {
+/* 	background:yellow; */
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+#container1 {
+/* 	background:red; */
+	float: left;
+	width: 100%;
+	position: relative;
+	right: 50%; /* right column width */
+}
+
+#col1 {
+/* 	background: white; */
+	float: left;
+	width: 46%;
+	/* left column content width 33% (left column width minus left and right padding) */
+	position: relative;
+	left: 52%; /* (right column width) plus (left column left padding) */
+	overflow: hidden;
+	padding: 2%;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+#facts {
+	text-align: justify;
+}
+
+#col2 {
+/* 	background: green; */
+	float: left;
+	width: 46%;
+	/* right column content width (right column width minus left and right padding) */
+	position: relative;
+	left: 56%;
+	/* (right column width) plus (left column left and right padding) plus (right column left padding) */
+	overflow: hidden;
+	padding: 2%;
+
+}
+
+/*--- social ------------*/
+ul#social {
+	margin: 0 0 0 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul#social li {
+	float: left;
+	margin: 0 0 0 0;
+	padding: 2%;
+	background-image: none;
+}
+
+ul#social li img {
+	width: 62px;
+	/*	height: 78px;*/
+	vertical-align: middle;
+}
+
+#info_book { /*	margin-bottom: 3em;*/
+	padding: 2%;
+	float: left;
+}
+
+#mailfunq {
+	float: left;
+	padding: 2%;
+}
+
+#mailfunq a:link,#sintro a:visited {
+	text-decoration: none;
+	color: #b0e194;
+}
+
+#mailfunq a:hover {
+	text-decoration: underline;
+	color: #79ff25;
+}
+
+#mailfunq:hover a:link,#sintro:hover a:visited {
+	text-decoration: underline;
+}
+
+id ="mailid7"
+
+	/* Footer styles */ 
+#footer {
+	clear: both;
+	float: left;
+	font-size: 0.9em;
+	width: 100%;
+	top: 0;
+	left: 0;
+	/*	border-top:1px solid #000;*/
+}
+
+#footer_text {
+	padding: 0;
+	margin: 0;
+	color: #b6bcc1;
+}
+
+#galleria{ 
+	height: 450px; 
+	background: #000 
+}
